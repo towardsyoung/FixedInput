@@ -4,7 +4,7 @@
         <name>FixedInput</name>
         <description>Cordova Plugin</description>
         <keywords>cordova,phonegap,input,ios</keywords>
-        <js-module src="platforms/ios/www/fixed_input.js" name="fixed_input">
+        <js-module src="www/js/fixed_input.js" name="FixedInput">
             <clobbers target="navigator.fixedInput" />
         </js-module>
         <platform name="ios">
