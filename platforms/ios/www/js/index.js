@@ -39,7 +39,7 @@ var app = {
     receivedEvent: function(id) {
         navigator.fixedInput.showAndFocus(function(content){
             alert(content);
-        }, 'hello world');
+        }, 'hello world', '发送');
     }
 };
 

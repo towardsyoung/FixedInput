@@ -16,6 +16,7 @@
 
 -(void) show:(CDVInvokedUrlCommand *)command {
     NSString* defaultText = [command.arguments objectAtIndex:0];
+    NSString* btnText = [command.arguments objectAtIndex:1];
     if (toolBar == nil) {
         //屏幕宽度
         screenWidth  = [UIScreen mainScreen].bounds.size.width;
@@ -44,6 +45,9 @@
     }
     if (defaultText) {
         textField.text = defaultText;
+    }
+    if (btnText) {
+        sendButton.title = btnText;
     }
     showCommand = command;
 }
